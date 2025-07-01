@@ -21,7 +21,7 @@ app.post('/reservations', (req, res) => {
     }
 
     const newReservation = {
-        id: notes.length + 1,
+        id: reservations.length + 1,
         content
     };
     
@@ -29,7 +29,22 @@ app.post('/reservations', (req, res) => {
     res.status(201).json(newReservation);
 })
 
+// GET - Retrieve all reservations
+app.get('/reservations', (req, res) => {
+    res.json(reservations);
+});
 
+// GET - Retrieve a single reservation by ID
+app.get('/reservations/:id', (req, res) => {
+    const id = parseInt(req.params.id);
+    const reservation = reservations.find(r => r.id  === id);
+
+    if(!reservation) {
+        return res.status(404).json({error: 'Reservation not found'});
+    }
+
+    res.json(reservation);
+});
 
 app.listen(PORT, () => {
     console.log(`Express server running at http://localhost:${PORT}`);
