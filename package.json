@@ -8,5 +8,16 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "- We can manage reservations using this server",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yboyu0u/my-reservation-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Yboyu0u/my-reservation-server/issues"
+  },
+  "homepage": "https://github.com/Yboyu0u/my-reservation-server#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }

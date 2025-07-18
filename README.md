@@ -1,10 +1,26 @@
 # Reservation Server 
 - We can manage reservations using this server 
-## TODO 
+
+## Execute
+```
+npm init -y # (only needed once to create package.json)
+```
+```
+npm install express
+```
+```
+node index.js  
+```
+
 ## TODO
 - [x] GET - /reservations  
-- [ ] GET - /reservations/:id  
-- [ ] POST - /reservations  
-- [ ] DELETE - /reservations/:id  
-- [x] Connect real database
+- [x] GET - /reservations/:id  
+- [x] POST - /reservations  
+- [x] DELETE - /reservations/:id
 
+
+
+- [ ] Connect real database
+- [ ] Install ORM 
+- [ ] Fix APIs relecting real db logic
+- [ ] Divide layers and refactoring 

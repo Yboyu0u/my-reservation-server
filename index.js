@@ -46,6 +46,20 @@ app.get('/reservations/:id', (req, res) => {
     res.json(reservation);
 });
 
+// DELETE - delete a single reservation by ID
+app.delete('/reservations/:id', (req, res) => {
+    const id = parseInt(req.params.id);
+
+    const initialLength = reservations.length;
+    reservations = reservations.filter(reservation => reservation.id !== id);
+    
+    if(reservations.length == initialLength) {
+        return res.status(404).json({ message: `Reservation with id ${id} not found.` });
+    }
+
+    res.status(200);
+});
+
 app.listen(PORT, () => {
     console.log(`Express server running at http://localhost:${PORT}`);
 });
