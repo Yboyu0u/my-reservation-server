@@ -2,7 +2,7 @@
 - We can manage reservations using this server 
 ## TODO 
 ## TODO
-- [ ] GET - /reservations  
+- [x] GET - /reservations  
 - [ ] GET - /reservations/:id  
 - [ ] POST - /reservations  
 - [ ] DELETE - /reservations/:id  
