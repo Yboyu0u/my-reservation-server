@@ -22,5 +22,5 @@ node index.js
 
 - [ ] Connect real database
 - [ ] Install ORM 
-- [ ] Fix APIs relecting real db logic
-- [ ] Divide layers and refactoring 
+- [ ] Fix APIs to reflect real db logic
+- [ ] Divide layers and refactoring
